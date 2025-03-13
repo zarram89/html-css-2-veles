@@ -1,13 +1,369 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Мебельная компания «Велес-Урал»| Главная</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__location location" style="background-color: black;">
+      <a class="location__picker" href="#">
+        <svg class="user-list__login-icon" width="24" height="24">
+          <use href="images/sprite.svg#location-pin"></use>
+        </svg>
+        Челябинск
+      </a>
+      <a href="tel:+73512207260">+7(351)220-72-60</a>
+      <span>c 9:00 до 18:00</span>
+    </div>
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="images/logotype-phone.svg" width="40" height="35" alt="Мебельная компания «Велес-Урал»">
+    </a>
+    <ul class="main-header__user-list user-list">
+      <a class="user-list__login" href="#">
+        <svg class="cart" width="24" height="24">
+          <use href="images/sprite.svg#user"></use>
+        </svg>
+        <span class="visually-hidden">Войти</span>
+      </a>
+      <a class="user-list__favorite" href="#">
+        <svg width="24" height="24">
+          <use href="images/sprite.svg#heart"></use>
+        </svg>
+        <span class="visually-hidden">Избранное</span>
+      </a>
+      <a class="user-list__cart" href="#">
+        <svg class="cart" width="24" height="24">
+          <use href="images/sprite.svg#cart"></use>
+        </svg>
+        <span class="visually-hidden">Корзина</span>
+      </a>
+    </ul>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <svg width="24" height="24">
+          <use href="images/sprite.svg#burger-menu"></use>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list categories-list">
+          <li class="categories-list__item">
+            <a href="#">
+              Шкафы
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Гостиная
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Детская
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Спальня
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Прихожая
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Офис
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Кухня
+            </a>
+          </li>
+          <li class="categories-list__item">
+            <a href="#">
+              Мягкая мебель
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              Хиты
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Новинки
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Способы оплаты
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Сборка и доставка
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Оптовым покупателям
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Поставщикам
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <form class="main-header__form" action="/search" method="GET" role="search">
+      <label for="search">Поиск:</label>
+      <input type="search" id="search" name="q" placeholder="Поиск..." aria-label="Поле поиска">
+      <button type="submit">🔍</button>
+    </form>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <h1 class="visually-hidden">Мебельная компания «Велес-Урал»</h1>
+
+    <section class="hero">
+      <div class="hero__wrapper">
+        <h2 class="visually-hidden">Акции и скидки</h2>
+        <ul class="hero__list">
+          <li class="hero__item hero-item">
+            <a class="hero-item__box" href="#">
+              <div class="hero-item__content">
+                <h3 class="hero-item__title">Кровати "Корона"</h3>
+                <p class="hero-item__description">Кровати от 9 999 рублей</p>
+              </div>
+            </a>
+          </li>
+          <li class="hero__item hero-item">
+            <a class="hero-item__box" href="#">
+              <div class="hero-item__content">
+                <h3 class="hero-item__title">Матрасы "Корона"</h3>
+                <p class="hero-item__description">Матрасы от 9 999 рублей</p>
+              </div>
+            </a>
+          </li>
+          <li class="hero__item hero-item">
+            <a class="hero-item__box" href="#">
+              <div class="hero-item__content">
+                <h3 class="hero-item__title">Корпусная мебель "Велес"</h3>
+                <p class="hero-item__description">Шкафы, гостиные, прихожие</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--info">
+            <h3 class="visually-hidden">Актуальная
+              информация 24/7</h3>
+          </li>
+          <li class="advantages__item advantages__item--prices">
+            <h3 class="visually-hidden">Низкие цены</h3>
+          </li>
+          <li class="advantages__item advantages__item--delivery">
+            <h3 class="visually-hidden">Быстрая доставка</h3>
+          </li>
+          <li class="advantages__item advantages__item--payment">
+            <h3 class="visually-hidden">Оплата при получении</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" width="300" height="300" src="" alt="">
+            <h3 class="catalog__title">Шкафы</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" width="300" height="300" src="" alt="">
+            <h3 class="catalog__title">Гостиная</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" width="300" height="300" src="" alt="">
+            <h3 class="catalog__title">Детская</h3>
+          </a>
+        </li>
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__image" width="300" height="300" src="" alt="">
+            <h3 class="catalog__title">Кухня</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="brands">
+      <h2 class="visually-hidden">Производители</h2>
+      <ul class="brands__list">
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <h3 class="visually-hidden">Мебельная фабрика «Корона»</h3>
+            <img class="brands__image" width="200" height="49" src="./images/corona-logo.svg" alt="Мебельная фабрика «Корона»">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <h3 class="visually-hidden">Фабрика мебели «Велес»</h3>
+            <img class="brands__image" width="200" height="68" src="./images/veles-logo.svg" alt="Фабрика мебели «Велес»">
+          </a>
+        </li>
+        <li class="brands__item" style="padding: 10px; border-radius: 10px; background-color: #494f55;">
+          <a class="brands__link" href="#">
+            <h3 class="visually-hidden">Матрасы и кровати фабрики «Evotek»</h3>
+            <img class="brands__image" width="200" height="53" src="./images/evotek-logo.svg" alt="Матрасы и кровати фабрики «Evotek»">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hits">
+      <h2 class="hits">Хиты</h2>
+    </section>
+
+    <section class="new">
+      <h2>Новинки</h2>
+    </section>
+  </main>
+
+  <footer class="main-footers">
+    <div class="main-footer__wrapper">
+      <img class="main-footer__logo" src="images/logo-full.svg" width="280" height="40" alt="Мебельная компания «Велес-Урал»">
+      <div class="main-footer__contacts contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list">
+          <li class=" contacts__item">
+            <a href="tel:+7351220-72-60">+7 (351) 220-72-60</a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:orders@veles-ural.ri">orders@veles-ural.ru</a>
+          </li>
+          <li class="contacts__item">
+            <address>Челябинск Комсомольский проспект д. 90 оф. 102</address>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="main-footer__groups groups">
+
+        <li class="groups__item subgroup">
+          <h2>Информация</h2>
+          <ul class="subgroup__list">
+            <li class="subgroup__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Бренды</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Оптовым клиентам</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Поставщикам</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="groups__item subgroup">
+          <h2>Каталог</h2>
+          <ul class="subgroup__list">
+            <li class="subgroup__item">
+              <a href="#">Шкафы</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Гостиная</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Детская</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Спальня</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Прихожая</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Офис</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Кухня</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Мягкая мебель</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Матрасы</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="groups__item subgroup">
+          <h2>Кабинет</h2>
+          <ul class="subgroup__list">
+            <li class="subgroup__item">
+              <a href="#">Мой профиль</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Корзина</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Избранное</a>
+            </li>
+            <li class="subgroup__item">
+              <a href="#">Заказы</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">2024 Мебельная компания «Велес-Урал»</p>
+        <p class="copyright__note">Не является публичной офертой</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -5,3 +5,76 @@
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Общие стили */
+.categories {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.category {
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+
+/* Кнопка-категория */
+.category__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.3s;
+  text-align: left;
+}
+
+.category__btn:hover,
+.category__btn:focus {
+  background: #e0e0e0;
+  outline: none;
+}
+
+/* Стрелка */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Подкатегории (по умолчанию скрыты) */
+.subcategories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  display: none;
+  padding-left: 20px;
+}
+
+.subcategories li {
+  padding: 10px;
+}
+
+/* Открываем подкатегории при фокусе или клике */
+.category:focus-within .subcategories {
+  display: block;
+}
+
+/* Меняем стрелку при фокусе или клике */
+.category:focus-within .arrow {
+  transform: rotate(180deg);
+}
+
